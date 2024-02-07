@@ -14,7 +14,7 @@ const UsersSlice = createSlice({
             },
             prepare(uName, uPassword){
                 return {
-                    payload : {id : nanoid() , uName, uPassword,role:"user"}
+                    payload : {id : nanoid() , uName, uPassword,role:uName == "admin" ? "admin" : "user"}
                 }
             }
         }
