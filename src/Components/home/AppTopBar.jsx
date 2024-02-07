@@ -2,7 +2,7 @@ import { Button, Typography } from "@mui/material";
 import { useDispatch } from "react-redux";
 import { setAuthStatus } from "../../features/auth/authSlice.jsx";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2.js";
-import CustomButton from "../CustomButton.js";
+import CustomButton from "../CustomButton.tsx";
 import NavElement from "./NavElement.jsx";
 import { useState } from "react";
 

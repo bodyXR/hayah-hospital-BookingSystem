@@ -1,11 +1,11 @@
-import AppTopBar from "../Components/home/AppTopBar.js";
-import Hero from "../Components/home/Hero.js";
-import HowWeWork from "../Components/home/HowWeWork.js";
+import AppTopBar from "../Components/home/AppTopBar.jsx";
+import Hero from "../Components/home/Hero.tsx";
+import HowWeWork from "../Components/home/HowWeWork.tsx";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2.js";
-import WhyChooseUs from "../Components/home/WhyChooseUs.js";
-import Testimorials from "../Components/home/Testimorials.js";
+import WhyChooseUs from "../Components/home/WhyChooseUs.tsx";
+import Testimorials from "../Components/home/Testimorials.tsx";
 import Team from "../Components/home/Team.jsx";
-import Footer from "../Components/home/Footer.js";
+import Footer from "../Components/home/Footer.tsx";
 
 const Home = () => {
   return (

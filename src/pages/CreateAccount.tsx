@@ -8,10 +8,10 @@ import {
 } from "@mui/material";
 import doctor from "../assets/doctor.jpg";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
-import CustomButton from "../Components/CustomButton";
-import { LOGIN_ROUTE } from "../routes/paths";
-import { addUser } from "../features/users/usersSlice";
-import { selectAllUsers } from "../features/users/usersSlice";
+import CustomButton from "../Components/CustomButton.tsx";
+import { LOGIN_ROUTE } from "../routes/paths.ts";
+import { addUser } from "../features/users/usersSlice.jsx";
+import { selectAllUsers } from "../features/users/usersSlice.jsx";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
 

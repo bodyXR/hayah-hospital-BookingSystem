@@ -1,14 +1,14 @@
 import {CssBaseline, ThemeProvider } from "@mui/material";
-import Login from "./pages/Login.js";
-import CreateAccount from "./pages/CreateAccount.js";
+import Login from "./pages/Login.tsx";
+import CreateAccount from "./pages/CreateAccount.tsx";
 import { theme } from "./theme.js";
 import { Route, Routes } from "react-router-dom";
-import { DOCTOR_INFOS_ROUTE, FORGOT_PASSWORD_ROUTE, HOME_PAGE_ROUTE, LOGIN_ROUTE, SIGNUP_ROUTE } from "./routes/paths.js";
-import Layout from "./Components/Layout.js";
-import Missing from "./pages/Missing.js";
+import { DOCTOR_INFOS_ROUTE, FORGOT_PASSWORD_ROUTE, HOME_PAGE_ROUTE, LOGIN_ROUTE, SIGNUP_ROUTE } from "./routes/paths.ts";
+import Layout from "./Components/Layout.tsx";
+import Missing from "./pages/Missing.tsx";
 import Home from "./pages/Home.jsx";
-import RequireAuth from "./Components/RequireAuth.js";
-import DoctorInfos from "./pages/DoctorInfos.js";
+import RequireAuth from "./Components/RequireAuth.tsx";
+import DoctorInfos from "./pages/DoctorInfos.tsx";
 
 const App = () => {
   return (

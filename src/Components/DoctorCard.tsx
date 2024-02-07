@@ -3,7 +3,7 @@ import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addDoctorDetails } from "../features/doctor/doctorSlice.jsx";
-import { DOCTOR_INFOS_ROUTE } from "../routes/paths.js";
+import { DOCTOR_INFOS_ROUTE } from "../routes/paths.ts";
 
 interface DoctorCardProps {
   name: String;

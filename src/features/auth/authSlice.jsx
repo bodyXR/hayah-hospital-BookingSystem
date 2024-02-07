@@ -6,21 +6,6 @@ const AuthSlice = createSlice({
     name : "auth",
     initialState,
     reducers:{
-        // toggleAuth(state,actions)
-        // {
-        //     state.isAuth = actions.payload;
-        //     localStorage.setItem(
-        //         "auth",
-        //         JSON.stringify({
-        //           isAuth: actions.payload,
-        //           username: JSON.parse(localStorage.getItem("auth"))?.username,
-        //         })
-        //     );
-        // },
-        // setUsername(state , actions)
-        // {
-        //     state.username = actions.payload.name;
-        // }
         setAuthStatus(state,actions)
         {
             state.isAuth = actions.payload;
