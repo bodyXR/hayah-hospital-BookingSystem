@@ -68,6 +68,7 @@ let allDoctors = [
     booksDetails: [],
   },
 ];
+
 const selectedDoctorTamplet = {
   name: "",
   carrer: "",
@@ -75,76 +76,6 @@ const selectedDoctorTamplet = {
   imgUrl: null,
   booksDetails: [],
 };
-
-// const initialState = [
-//   JSON.parse(localStorage.getItem("allDoctors")) || allDoctors,
-//   JSON.parse(localStorage.getItem("selectedDoctor")) || selectedDoctorTamplet,
-// ];
-
-// const doctorSlice = createSlice({
-//   name: "doctor",
-//   initialState,
-//   reducers: {
-//     addDoctorDetails: {
-//       reducer(state, action) {
-//         state = action.payload;
-//         localStorage.setItem("selectedDoctor", JSON.stringify(state));
-//         console.log(JSON.parse(localStorage.getItem("selectedDoctor")));
-//       },
-//       prepare(name, carrer, workSchedule, imgUrl) {
-//         let booksNumber;
-//         for (let i = 0; i <= allDoctors.length -1; i++) {
-//           if (allDoctors[i].name == name) {
-//             booksNumber = allDoctors[i].booksNumber;
-//           }
-//         }
-//         return {
-//           payload: { name, carrer, workSchedule, imgUrl, booksNumber },
-//         };
-//       },
-//     },
-//     addBook: {
-//       reducer(state, action) {
-//          // Find the index of the doctor whose book number needs to be incremented
-//          const doctorIndex = state[0].findIndex(doctor => doctor.name === state[1].name);
-
-//          // Create a new state object
-//          const newState = state.map((item, index) => {
-//            if (index === 1) {
-//              // Update the booksNumber of the selected doctor
-//              return { ...item, booksNumber: item.booksNumber + 1 };
-//            } else if (index === 0 && doctorIndex !== -1) {
-//              // Update the booksNumber and booksDetails of the corresponding doctor in the list
-//              return state[0].map((doctor, idx) => {
-//                if (idx === doctorIndex) {
-//                  return {
-//                    ...doctor,
-//                    booksNumber: doctor.booksNumber + 1,
-//                    booksDetails: [...doctor.booksDetails, action.payload],
-//                  };
-//                }
-//                return doctor;
-//              });
-//            }
-//            return item;
-//          });
-
-//          // Update the state with the new state object
-//          return newState;
-//       },
-//       prepare(name, number) {
-//          return {
-//            payload: { name, number },
-//          };
-//       },
-//      },
-//   },
-// });
-
-// export const selectDoctorDetails = (state) => state.doctor;
-// export const { addDoctorDetails, addBook } = doctorSlice.actions;
-
-// export default doctorSlice.reducer;
 
 const initialState = [allDoctors, selectedDoctorTamplet];
 
