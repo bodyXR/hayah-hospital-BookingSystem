@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { setAuthStatus } from "../../features/auth/authSlice.jsx";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2.js";
 import CustomButton from "../CustomButton.js";
-import NavElement from "../home/NavElement.jsx";
+import NavElement from "./NavElement.jsx";
 import { useState } from "react";
 
 const AppTopBar = () => {
@@ -24,10 +24,10 @@ const AppTopBar = () => {
         </Typography>
       </Grid2>
       <Grid2 display={"flex"} gap={3} sx={{ mt: "13px" }}>
-        <NavElement content="Home" num={1} url="#" GeneralClicked={GeneralClicked} setGeneralClicked={(n:number) => setGeneralClicked(n)}/>
-        <NavElement content="Doctor" num={2} url="#doctors" GeneralClicked={GeneralClicked} setGeneralClicked={(n:number) => setGeneralClicked(n)}/>
-        <NavElement content="Hosbital" num={3} url="#HowWeWork" GeneralClicked={GeneralClicked} setGeneralClicked={(n:number) => setGeneralClicked(n)}/>
-        <NavElement content="Blogs" num={4} url="#Testimorials" GeneralClicked={GeneralClicked} setGeneralClicked={(n:number) => setGeneralClicked(n)}/>
+        <NavElement content="Home" num={1} url="#" GeneralClicked={GeneralClicked} setGeneralClicked={(n) => setGeneralClicked(n)}/>
+        <NavElement content="Doctor" num={2} url="#doctors" GeneralClicked={GeneralClicked} setGeneralClicked={(n) => setGeneralClicked(n)}/>
+        <NavElement content="Hosbital" num={3} url="#HowWeWork" GeneralClicked={GeneralClicked} setGeneralClicked={(n) => setGeneralClicked(n)}/>
+        <NavElement content="Blogs" num={4} url="#Testimorials" GeneralClicked={GeneralClicked} setGeneralClicked={(n) => setGeneralClicked(n)}/>
       </Grid2>
       <Grid2 display={"flex"}>
         <CustomButton
